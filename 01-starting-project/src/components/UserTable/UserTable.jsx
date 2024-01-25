@@ -1,5 +1,5 @@
 import "./UserTable.css";
-import { formatter } from "../util/investment.js";
+import { formatter } from "../../util/investment.js";
 
 export default function UserTable({
   investmentResults,

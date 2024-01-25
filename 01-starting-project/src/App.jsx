@@ -1,7 +1,7 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header.jsx";
 import "./App.css";
-import UserInput from "./components/UserInput";
-import UserTable from "./components/UserTable";
+import UserInput from "./components/UserInput/UserInput.jsx";
+import UserTable from "./components/UserTable/UserTable.jsx";
 import { useState } from "react";
 import { calculateInvestmentResults } from "./util/investment.js";
 
