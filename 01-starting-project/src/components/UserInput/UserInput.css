@@ -40,3 +40,25 @@
     }
   }
 }
+/* MEDIA QUERIES TABLET */
+@media (max-width: 720px) {
+  .input-container {
+    width: 20rem;
+    & div {
+      & input {
+        width: 15rem;
+      }
+    }
+  }
+}
+/* MEDIA QUERIES SMARTHPHONE */
+@media (max-width: 450px) {
+  .input-container {
+    width: 20rem;
+    & div {
+      & input {
+        width: 15rem;
+      }
+    }
+  }
+}

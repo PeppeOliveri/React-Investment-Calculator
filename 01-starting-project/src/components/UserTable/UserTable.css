@@ -29,3 +29,20 @@ tbody {
     }
   }
 }
+
+@media (max-width: 450px) {
+  table {
+    margin: 4rem 0 4rem 0;
+  }
+
+  thead {
+    & tr {
+      grid-template-columns: 2rem 5rem 4.5rem 4rem 4rem;
+    }
+  }
+  tbody {
+    & tr {
+      grid-template-columns: 2rem 5rem 4.5rem 4rem 4rem;
+    }
+  }
+}
