@@ -1,0 +1,31 @@
+table {
+  margin: 4rem;
+}
+
+thead {
+  color: #83e6c0;
+  & tr {
+    display: grid;
+    grid-template-rows: 20px 10px;
+    grid-template-columns: 3rem 9rem 9rem 9rem 9rem;
+    grid-gap: 0.5rem;
+    & td {
+      text-align: end;
+      font-weight: bold;
+    }
+  }
+}
+
+tbody {
+  color: #c2e9e0;
+  & tr {
+    display: grid;
+    grid-template-rows: 10px 10px;
+    grid-template-columns: 3rem 9rem 9rem 9rem 9rem;
+    grid-gap: 0.5rem;
+    & td {
+      text-align: end;
+      font-weight: bold;
+    }
+  }
+}
