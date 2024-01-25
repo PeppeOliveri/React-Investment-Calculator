@@ -6,17 +6,6 @@ export default function UserTable({
   initialInvestment,
   duration,
 }) {
-  const totalInterest = investmentResults.map((results) => {
-    return (
-      results.valueEndOfYear -
-      results.annualInvestment * results.year -
-      initialInvestment
-    );
-  });
-  const totalAmountInvested = investmentResults.map((results, index) => {
-    return results.valueEndOfYear - totalInterest[index];
-  });
-
   return (
     <>
       {+duration === 0 || +duration < 0 ? (
@@ -35,14 +24,20 @@ export default function UserTable({
             </tr>
           </thead>
           <tbody>
-            {investmentResults.map((results, index) => {
+            {investmentResults.map((results) => {
+              const totalInterest =
+                results.valueEndOfYear -
+                results.annualInvestment * results.year -
+                initialInvestment;
+              const totalAmountInvested =
+                results.valueEndOfYear - totalInterest;
               return (
                 <tr key={results.year}>
                   <td>{results.year}</td>
                   <td>{formatter.format(results.valueEndOfYear)}</td>
                   <td>{formatter.format(results.interest)}</td>
-                  <td>{formatter.format(totalInterest[index])}</td>
-                  <td>{formatter.format(totalAmountInvested[index])}</td>
+                  <td>{formatter.format(totalInterest)}</td>
+                  <td>{formatter.format(totalAmountInvested)}</td>
                 </tr>
               );
             })}
