@@ -10,6 +10,7 @@ export default function UserInput({ userInput, onChangeInput }) {
           onChange={onChangeInput}
           value={userInput.initialNumber}
           name="initialNumber"
+          required
         />
       </div>
       <div>
@@ -19,6 +20,7 @@ export default function UserInput({ userInput, onChangeInput }) {
           onChange={onChangeInput}
           value={userInput.annualNumber}
           name="annualNumber"
+          required
         />
       </div>
       <div>
@@ -28,6 +30,7 @@ export default function UserInput({ userInput, onChangeInput }) {
           onChange={onChangeInput}
           value={userInput.expectedReturn}
           name="expectedReturn"
+          required
         />
       </div>
       <div>
@@ -37,6 +40,7 @@ export default function UserInput({ userInput, onChangeInput }) {
           onChange={onChangeInput}
           value={userInput.duration}
           name="duration"
+          required
         />
       </div>
     </div>
